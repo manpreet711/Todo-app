@@ -1,0 +1,161 @@
+body{
+    background: dimgray;
+}
+#container{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    height: 700px;
+    overflow-y: auto;
+    color: black;
+    background: azure;
+    border: 10px solid #535457;
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+
+    border-radius: 10px;
+}
+#container h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#container ul{
+    margin-top: 50px;
+    padding-left: 0;
+}
+#container ul li:hover{
+    box-shadow: -3px 3px 10px 1px black;
+}
+#container ul li{
+    list-style: none;
+    border: 2px solid #8896ae;
+    width: 80%;
+    opacity: 1;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+    margin-top: 8px;
+    
+    
+}
+#container ul li label{
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    font-size: large;
+}
+#container ul li #check{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    border:2px solid #b5c5dd;
+    position:relative;
+    outline: 0;
+    
+}
+#container ul li #check:checked::after{
+    content:'\2714';
+    font-size:20px;
+    position:absolute;
+    top:0px;
+    left:7px;
+    color: black;
+    
+}
+#continer ul li #input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0,.3);
+    
+}
+#container .controls{
+    width:80%;
+    margin: auto;
+    
+}
+#container .controls #input:hover{
+    box-shadow: 0 0 10px 2px black;
+}
+#container .controls #input{
+    width: 90%;
+    height: 30px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    background:azure;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 2px solid #01a3a4;
+}
+#container .control button{
+    width: 100%;
+    background: white;
+    border: none;
+    height: 30px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+}
+#container .controls button:focus{
+    outline: 0;
+}
+#container .controls button:hover{
+    transform:scale(1.05);
+    box-shadow: 0px 0px 5px 1px black;
+}
+#container .controls #add:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+#container .controls #remove:hover{
+    background-color:  rgb(42, 146, 231);
+    color: white;
+}
+#container .controls #removeall:hover{
+    background-color:  rgba(223, 27, 27, 0.781); 
+    color: white;
+}
+#container .controls #add{
+    background-color:white;
+    transition-duration: 0.4s;
+    font-family: none;
+    font-size: 24px;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#container .controls #remove{
+    background-color: white;
+    transition-duration: 0.4s;
+    font-family: none;
+    font-size: 24px;
+    border: 2px solid  rgb(42, 146, 231); 
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#container .controls #removeall{
+    background-color: white;
+    transition-duration: 0.4s;
+    font-family: none;
+    font-size: 24px;
+    border: 2px solid  rgb(252, 79, 79);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#container #check{
+    opacity:1;
+    border-radius: 10px;
+}
+.visual{
+    opacity:1 !important;
+    border-radius: 10px;
+}
